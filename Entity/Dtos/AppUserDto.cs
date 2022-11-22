@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
-
-namespace Entity.Concrete
+﻿namespace Entity.Dtos
 {
-    public class AppUser : IdentityUser<int>
+    public class AppUserDto 
     {
         public string Gender { get; set; }
         public string Name { get; set; }

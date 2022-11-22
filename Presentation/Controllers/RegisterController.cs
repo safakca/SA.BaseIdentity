@@ -8,8 +8,7 @@ namespace Presentation.Controllers
 {
     public class RegisterController : Controller
     {
-        private readonly UserManager<AppUser> _appUserManager;
-
+        private readonly UserManager<AppUser> _appUserManager; 
         public RegisterController(UserManager<AppUser> appUserManager)
         {
             _appUserManager = appUserManager;
@@ -47,7 +46,7 @@ namespace Presentation.Controllers
                         foreach (var item in result.Errors)
                         {
                             ModelState.AddModelError("", item.Description);
-                        } 
+                        }
                     }
                 }
                 else
@@ -55,7 +54,7 @@ namespace Presentation.Controllers
                     ModelState.AddModelError("", "Password Not Combine");
                 }
             }
-           return View();
+            return View();
         }
     }
 }

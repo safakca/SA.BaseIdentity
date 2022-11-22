@@ -9,7 +9,7 @@ namespace Presentation.Models
         public string Name { get; set; }
 
         [Required(ErrorMessage = "surname don't empty")]
-        public string Surname { get; set; } 
+        public string Surname { get; set; }
 
         [Required(ErrorMessage = "username don't empty")]
         public string Username { get; set; }
