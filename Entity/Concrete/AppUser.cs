@@ -3,8 +3,7 @@
 namespace Entity.Concrete
 {
     /// <summary>
-    /// default da stringdir IdentityUser key
-    /// otomatik artan olmasi icin int olarak ekledik
+    /// default da stringdir IdentityUser key 
     /// </summary>
     public class AppUser : IdentityUser<int>
     {
